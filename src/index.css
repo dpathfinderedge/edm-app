@@ -1,0 +1,199 @@
+  
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #404040;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 1.5rem 0;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+  Arial, sans-serif;
+  line-height: 1.2;
+  color: #404040;
+  font-size: 1.75rem;
+}
+      
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+}
+  
+.container,
+.small-container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.small-container {
+  max-width: 800px;
+}
+
+.text-left {
+  text-align: left;
+}
+  
+.text-right {
+  text-align: right;
+}
+  
+.text-center {
+  text-align: center;
+}
+  
+.button,
+button,
+[type="submit"],
+[type="button"] {
+  display: inline-block;
+  border: 1px solid #0366ee;
+  border-radius: 4px;
+  background: #0366ee;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0 0.5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+}
+  
+.button:hover,
+.button:focus,
+.button:active,
+button:hover,
+button:focus,
+button:active,
+[type="submit"]:hover,
+[type="submit"]:focus,
+[type="submit"]:active,
+[type="button"]:hover
+[type="button"]:focus,
+[type="button"]:active {
+  border: 1px solid #0250bc;
+  background: #0250bc;
+}
+    
+.muted-button {
+  background: transparent;
+  border: 1px solid #cdcdcd;
+  color: #4e4e4e;
+}
+  
+.muted-button:hover,
+.muted-button:focus,
+.muted-button:active {
+  color: #4e4e4e;
+  border: 1px solid #818181;
+  background: transparent;
+}
+  
+[type="date"],
+[type="email"],
+[type="number"],
+[type="password"],
+[type="text"] {
+  display: block;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 0.75rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+  
+[type='date']:hover,
+[type='email']:hover,
+[type='number']:hover,
+[type='password']:hover,
+[type='text']:hover {
+  border: 1px solid #c5c5c5;
+}
+  
+[type='date']:focus,
+[type='date']:active,
+[type='email']:focus,
+[type='email']:active,
+[type='number']:focus,
+[type='number']:active,
+[type='password']:focus,
+[type='password']:active,
+[type='text']:focus,
+[type='text']:active {
+  border: 1px solid #0366ee;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #8cbcfe;
+}
+label {
+  font-weight: 600;
+  max-width: 100%;
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+ 
+table {
+  margin: 0 0 1.5rem 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+  
+thead th {
+  border-bottom: 2px solid #dedede;
+}
+  
+  
+td {
+  border-bottom: 1px solid #dedede;
+}
+  
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+}
+    
+.striped-table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+  
+.contain-table {
+  overflow-x: auto;
+}
+  
+@media (min-width: 600px) {
+  .contain-table {
+    width: 100%;
+  }
+}
